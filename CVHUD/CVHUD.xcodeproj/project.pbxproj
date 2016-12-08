@@ -13,6 +13,13 @@
 		7E5AA1C41DF4684100C7F01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5AA1C21DF4684100C7F01E /* Main.storyboard */; };
 		7E5AA1C61DF4684100C7F01E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5AA1C51DF4684100C7F01E /* Assets.xcassets */; };
 		7E5AA1C91DF4684100C7F01E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5AA1C71DF4684100C7F01E /* LaunchScreen.storyboard */; };
+		7E5AA1D31DF46B6500C7F01E /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA1D21DF46B6500C7F01E /* HUD.m */; };
+		7E5AA1D61DF46DBB00C7F01E /* CVHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA1D51DF46DBB00C7F01E /* CVHUD.m */; };
+		7E5AA1DA1DF46F8300C7F01E /* CVHUDSuccessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA1D91DF46F8300C7F01E /* CVHUDSuccessView.m */; };
+		7E5AA1DD1DF46FE700C7F01E /* CVHUDSquareBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AA1DC1DF46FE700C7F01E /* CVHUDSquareBaseView.m */; };
+		7E7066661DF90BB600AC86D8 /* CVWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7066651DF90BB600AC86D8 /* CVWindow.m */; };
+		7E7066691DF90BF100AC86D8 /* FrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7066681DF90BF100AC86D8 /* FrameView.m */; };
+		7E70666C1DF933FC00AC86D8 /* WindowRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E70666B1DF933FC00AC86D8 /* WindowRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,21 @@
 		7E5AA1C51DF4684100C7F01E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E5AA1C81DF4684100C7F01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E5AA1CA1DF4684100C7F01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5AA1D11DF46B6500C7F01E /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		7E5AA1D21DF46B6500C7F01E /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
+		7E5AA1D41DF46DBB00C7F01E /* CVHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVHUD.h; sourceTree = "<group>"; };
+		7E5AA1D51DF46DBB00C7F01E /* CVHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVHUD.m; sourceTree = "<group>"; };
+		7E5AA1D81DF46F8300C7F01E /* CVHUDSuccessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVHUDSuccessView.h; sourceTree = "<group>"; };
+		7E5AA1D91DF46F8300C7F01E /* CVHUDSuccessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVHUDSuccessView.m; sourceTree = "<group>"; };
+		7E5AA1DB1DF46FE700C7F01E /* CVHUDSquareBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVHUDSquareBaseView.h; sourceTree = "<group>"; };
+		7E5AA1DC1DF46FE700C7F01E /* CVHUDSquareBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVHUDSquareBaseView.m; sourceTree = "<group>"; };
+		7E7066611DF8579300AC86D8 /* PKHUDAnimating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKHUDAnimating.h; sourceTree = "<group>"; };
+		7E7066641DF90BB600AC86D8 /* CVWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVWindow.h; sourceTree = "<group>"; };
+		7E7066651DF90BB600AC86D8 /* CVWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVWindow.m; sourceTree = "<group>"; };
+		7E7066671DF90BF100AC86D8 /* FrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameView.h; sourceTree = "<group>"; };
+		7E7066681DF90BF100AC86D8 /* FrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameView.m; sourceTree = "<group>"; };
+		7E70666A1DF933FC00AC86D8 /* WindowRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowRootViewController.h; sourceTree = "<group>"; };
+		7E70666B1DF933FC00AC86D8 /* WindowRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +84,7 @@
 				7E5AA1BD1DF4684000C7F01E /* AppDelegate.m */,
 				7E5AA1BF1DF4684000C7F01E /* ViewController.h */,
 				7E5AA1C01DF4684100C7F01E /* ViewController.m */,
-				7E5AA1C21DF4684100C7F01E /* Main.storyboard */,
-				7E5AA1C51DF4684100C7F01E /* Assets.xcassets */,
-				7E5AA1C71DF4684100C7F01E /* LaunchScreen.storyboard */,
-				7E5AA1CA1DF4684100C7F01E /* Info.plist */,
+				7E5AA1D01DF46B4700C7F01E /* HUD */,
 				7E5AA1B91DF4684000C7F01E /* Supporting Files */,
 			);
 			path = CVHUD;
@@ -74,9 +93,59 @@
 		7E5AA1B91DF4684000C7F01E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E5AA1C21DF4684100C7F01E /* Main.storyboard */,
+				7E5AA1C51DF4684100C7F01E /* Assets.xcassets */,
+				7E5AA1C71DF4684100C7F01E /* LaunchScreen.storyboard */,
+				7E5AA1CA1DF4684100C7F01E /* Info.plist */,
 				7E5AA1BA1DF4684000C7F01E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E5AA1D01DF46B4700C7F01E /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				7E7066621DF90B8B00AC86D8 /* Internal */,
+				7E7066601DF8577200AC86D8 /* Protocol */,
+				7E5AA1D71DF46F4B00C7F01E /* ContentViews */,
+				7E5AA1D11DF46B6500C7F01E /* HUD.h */,
+				7E5AA1D21DF46B6500C7F01E /* HUD.m */,
+				7E5AA1D41DF46DBB00C7F01E /* CVHUD.h */,
+				7E5AA1D51DF46DBB00C7F01E /* CVHUD.m */,
+			);
+			name = HUD;
+			sourceTree = "<group>";
+		};
+		7E5AA1D71DF46F4B00C7F01E /* ContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				7E5AA1D81DF46F8300C7F01E /* CVHUDSuccessView.h */,
+				7E5AA1D91DF46F8300C7F01E /* CVHUDSuccessView.m */,
+				7E5AA1DB1DF46FE700C7F01E /* CVHUDSquareBaseView.h */,
+				7E5AA1DC1DF46FE700C7F01E /* CVHUDSquareBaseView.m */,
+			);
+			name = ContentViews;
+			sourceTree = "<group>";
+		};
+		7E7066601DF8577200AC86D8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7E7066611DF8579300AC86D8 /* PKHUDAnimating.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		7E7066621DF90B8B00AC86D8 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				7E7066641DF90BB600AC86D8 /* CVWindow.h */,
+				7E7066651DF90BB600AC86D8 /* CVWindow.m */,
+				7E7066671DF90BF100AC86D8 /* FrameView.h */,
+				7E7066681DF90BF100AC86D8 /* FrameView.m */,
+				7E70666A1DF933FC00AC86D8 /* WindowRootViewController.h */,
+				7E70666B1DF933FC00AC86D8 /* WindowRootViewController.m */,
+			);
+			name = Internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5AA1D61DF46DBB00C7F01E /* CVHUD.m in Sources */,
 				7E5AA1C11DF4684100C7F01E /* ViewController.m in Sources */,
+				7E5AA1DD1DF46FE700C7F01E /* CVHUDSquareBaseView.m in Sources */,
+				7E5AA1D31DF46B6500C7F01E /* HUD.m in Sources */,
+				7E5AA1DA1DF46F8300C7F01E /* CVHUDSuccessView.m in Sources */,
 				7E5AA1BE1DF4684000C7F01E /* AppDelegate.m in Sources */,
+				7E70666C1DF933FC00AC86D8 /* WindowRootViewController.m in Sources */,
+				7E7066691DF90BF100AC86D8 /* FrameView.m in Sources */,
+				7E7066661DF90BB600AC86D8 /* CVWindow.m in Sources */,
 				7E5AA1BB1DF4684000C7F01E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +385,7 @@
 				7E5AA1CF1DF4684100C7F01E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
