@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HUD.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
@@ -25,6 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)showHUD:(id)sender {
+    [HUD show];
 }
 
 

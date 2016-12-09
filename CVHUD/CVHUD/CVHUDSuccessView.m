@@ -27,10 +27,19 @@ static NSString *checkmarkStrokeAnimKey = @"checkmarkStrokeAnim";
         layer.frame = CGRectMake(3, 3, 88, 56);
         layer.path = checkmarkPath.CGPath;
         layer.fillMode = kCAFillModeForwards;
-        
+        layer.lineCap = kCALineCapRound;
+        layer.lineJoin = kCALineJoinRound;
+        layer.fillColor = nil;
+        layer.strokeColor = [UIColor colorWithRed:0.15f green:0.15f blue:0.15f alpha:1.0].CGColor;
+        layer.lineWidth = 6.0;
         _checkmarkShapeLayer = layer;
     }
     return _checkmarkShapeLayer;
+}
+
+- (instancetype)init
+{
+    return [self initWithTitle:nil subTitle:nil];
 }
 
 - (instancetype)initWithTitle:(NSString *)title subTitle:(NSString *)subTitle {

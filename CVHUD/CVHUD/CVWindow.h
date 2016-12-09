@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FrameView.h"
+
 
 @interface CVWindow : UIWindow
-
+@property (nonatomic, strong) FrameView *frameView;
+- (void)showFrameView;
+- (void)showBackground:(BOOL)animated;
+- (void)hideBackground:(BOOL)animated;
 @end
