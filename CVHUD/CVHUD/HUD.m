@@ -9,6 +9,7 @@
 #import "HUD.h"
 #import "CVHUD.h"
 #import "CVHUDSuccessView.h"
+#import "CVHUDErrorView.h"
 
 typedef enum : NSUInteger {
     HUDContentSuccess,
@@ -24,7 +25,7 @@ typedef enum : NSUInteger {
 
 
 + (void)show {
-    [CVHUD sharedHUD].contentView = [self contentViewWithType:HUDContentSuccess];
+    [CVHUD sharedHUD].contentView = [self contentViewWithType:HUDContentError];
     [[CVHUD sharedHUD] show];
 }
 
@@ -34,7 +35,7 @@ typedef enum : NSUInteger {
             return [[CVHUDSuccessView alloc] init];
             break;
         case HUDContentError:
-            return [[CVHUDSuccessView alloc] init];
+            return [[CVHUDErrorView alloc] init];
             break;
     }
 }
