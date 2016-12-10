@@ -8,6 +8,7 @@
 
 #import "FrameView.h"
 
+
 @interface FrameView ()
 {
     UIView<PKHUDAnimating> *_content;
@@ -57,7 +58,7 @@
 #pragma mark - Getter & Setter
 - (UIView<PKHUDAnimating> *)content {
     if (!_content) {
-        _content = [UIView new];
+        _content = [[UIView alloc] init];
     }
     return _content;
 }

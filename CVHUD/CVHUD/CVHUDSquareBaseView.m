@@ -12,13 +12,6 @@
 /**
  正方形的基础 view
  */
-@interface CVHUDSquareBaseView ()
-
-@property (nonatomic, strong) UIImageView *imageView;   // 背景图片
-@property (nonatomic, strong) UILabel *titleLabel;      // 标题
-@property (nonatomic, strong) UILabel *subTitleLabel;   // 副标题
-
-@end
 
 @implementation CVHUDSquareBaseView
 

@@ -9,6 +9,11 @@
 #import "CVHUDSquareBaseView.h"
 #import "PKHUDAnimating.h"
 
-@interface CVHUDSuccessView : CVHUDSquareBaseView <PKHUDAnimating>
 
+/**
+ 在原来的 BaseView 上，添加一层 layer。
+ 遵循 animation 协议。
+ 可以开启动画，关闭动画。在动画方法中做响应的动画即可。
+ */
+@interface CVHUDSuccessView : CVHUDSquareBaseView <PKHUDAnimating>
 @end

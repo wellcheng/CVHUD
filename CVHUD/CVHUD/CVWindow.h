@@ -10,9 +10,13 @@
 #import "FrameView.h"
 
 
+/**
+ <#Description#>
+ */
 @interface CVWindow : UIWindow
 @property (nonatomic, strong) FrameView *frameView;
 - (void)showFrameView;
+- (void)hideFrameViewAnimated:(BOOL)animated;
 - (void)showBackground:(BOOL)animated;
 - (void)hideBackground:(BOOL)animated;
 @end

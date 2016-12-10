@@ -25,28 +25,54 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taylor_swift.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ARG-aY-LKF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCh-is-3tj">
-                                <rect key="frame" x="155.5" y="312.5" width="63" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Show"/>
-                                <connections>
-                                    <action selector="showHUD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Df7-T3-zmM"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BaP-CW-51Q">
+                                <rect key="frame" x="10" y="617" width="355" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYM-tm-B9I">
+                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="30"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Success"/>
+                                        <connections>
+                                            <action selector="showOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YtT-gv-lBr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD2-ak-2QO">
+                                        <rect key="frame" x="118.5" y="0.0" width="118" height="30"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Progress"/>
+                                        <connections>
+                                            <action selector="showTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iyt-5W-Hiq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJt-1Y-8bU">
+                                        <rect key="frame" x="236.5" y="0.0" width="118.5" height="30"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Error"/>
+                                        <connections>
+                                            <action selector="showThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ug-Zt-sMc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dCh-is-3tj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Dy-1H-H31"/>
+                            <constraint firstAttribute="trailing" secondItem="BaP-CW-51Q" secondAttribute="trailing" constant="10" id="1Pl-pC-tz7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ARG-aY-LKF" secondAttribute="bottom" id="BpY-UE-efb"/>
                             <constraint firstItem="ARG-aY-LKF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="UbM-Fu-kft"/>
+                            <constraint firstItem="BaP-CW-51Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="bmL-rV-8Eh"/>
                             <constraint firstItem="ARG-aY-LKF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eJY-dt-Wts"/>
                             <constraint firstAttribute="trailing" secondItem="ARG-aY-LKF" secondAttribute="trailing" id="fSQ-xW-Xsi"/>
-                            <constraint firstItem="dCh-is-3tj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="olA-pI-hF6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BaP-CW-51Q" secondAttribute="bottom" constant="20" id="qXX-0P-tQr"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="42.728635682158924"/>
         </scene>
     </scenes>
     <resources>

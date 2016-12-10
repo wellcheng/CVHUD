@@ -10,12 +10,7 @@
 #import "CVHUD.h"
 #import "CVHUDSuccessView.h"
 #import "CVHUDErrorView.h"
-
-typedef enum : NSUInteger {
-    HUDContentSuccess,
-    HUDContentError,
-    
-} HUDContentType;
+#import "CVHUDProgressView.h"
 
 @interface HUD ()
 
@@ -23,11 +18,22 @@ typedef enum : NSUInteger {
 
 @implementation HUD
 
-
+#pragma mark - Interface
 + (void)show {
-    [CVHUD sharedHUD].contentView = [self contentViewWithType:HUDContentError];
-    [[CVHUD sharedHUD] show];
+    [self showWith:HUDContentSuccess];
 }
+
++ (void)showWith:(HUDContentType)type {
+    [self showWithType:type delay:2.0];
+}
+
+#pragma mark - Custom
++ (void)showWithType:(HUDContentType)type delay:(NSTimeInterval)delay {
+    [CVHUD sharedHUD].contentView = [self contentViewWithType:type];
+    [[CVHUD sharedHUD] show];
+    [[CVHUD sharedHUD] hideAfterDelay:delay];
+}
+
 
 + (UIView *)contentViewWithType:(HUDContentType)type {
     switch (type) {
@@ -37,6 +43,8 @@ typedef enum : NSUInteger {
         case HUDContentError:
             return [[CVHUDErrorView alloc] init];
             break;
+        case HUDContentProgress:
+            return [[CVHUDProgressView alloc] init];
     }
 }
 @end

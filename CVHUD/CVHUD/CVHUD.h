@@ -17,4 +17,6 @@
 
 - (void)show;
 
+- (void)hideAfterDelay:(NSTimeInterval)delay;
+
 @end

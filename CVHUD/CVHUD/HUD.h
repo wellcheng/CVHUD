@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger, HUDContentType) {
+    HUDContentSuccess,
+    HUDContentError,
+    HUDContentProgress,
+};
+
 @interface HUD : NSObject
 
-+ (void)show;
++ (void)showWith:(HUDContentType)type;
 
 @end

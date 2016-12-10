@@ -25,8 +25,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)showHUD:(id)sender {
-    [HUD show];
+
+- (IBAction)showOne:(id)sender {
+    [HUD showWith:HUDContentSuccess];
+}
+
+- (IBAction)showTwo:(id)sender {
+    [HUD showWith:HUDContentProgress];
+}
+
+- (IBAction)showThree:(id)sender {
+    [HUD showWith:HUDContentError];
 }
 
 

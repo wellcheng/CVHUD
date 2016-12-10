@@ -14,3 +14,7 @@
 - (void)stopAnimation;
 
 @end
+
+@interface PKHUDAnimation : NSObject
++ (CAAnimation *)discreteRotation;
+@end

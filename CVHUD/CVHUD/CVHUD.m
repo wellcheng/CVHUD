@@ -96,6 +96,17 @@ typedef void(^TimerAction)(BOOL isOK);
     [self startAnimatingContentView];
 }
 
+- (void)hideAfterDelay:(NSTimeInterval)delay {
+    if (self.hideTimer) {
+        [self.hideTimer invalidate];
+    }
+    self.hideTimer = [NSTimer scheduledTimerWithTimeInterval:delay target:self selector:@selector(performDelayedHide:) userInfo:nil repeats:NO];
+}
+
+#pragma mark - Timer
+- (void)performDelayedHide:(id)userInfo {
+    [self hideWithAnimated:YES];
+}
 #pragma mark - Observer
 
 - (void)addObserver {
@@ -106,10 +117,19 @@ typedef void(^TimerAction)(BOOL isOK);
     
 }
 
+- (void)willEnterForeground:(NSNotification *)noti {
+    [self startAnimatingContentView];
+}
+
 - (void)removeObserver {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 #pragma mark - Animation
+
+- (void)hideWithAnimated:(BOOL)animated {
+    [self.window hideFrameViewAnimated:animated];
+}
+
 - (void)startAnimatingContentView {
     if (self.isVisible && [self.contentView conformsToProtocol:@protocol(PKHUDAnimating)]) {
         UIView<PKHUDAnimating> *view = self.contentView;

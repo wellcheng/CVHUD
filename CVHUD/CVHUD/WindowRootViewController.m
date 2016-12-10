@@ -10,16 +10,9 @@
 #import "AppDelegate.h"
 
 @interface WindowRootViewController ()
-//@property (nonatomic, assign, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 @end
 
 @implementation WindowRootViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
 
 #pragma mark - Getter & Setter
 
